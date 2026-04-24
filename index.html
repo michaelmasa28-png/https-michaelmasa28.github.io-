@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Doublem — Masa web developer. Portfolio of projects and contact details." />
+  <title>Doublem Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
   <header>
     <h1>Doublem</h1>
-    <p>Aspiring Web Developer</p>
+    <p>Masa Web Developer</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -17,14 +18,11 @@
     </nav>
   </header>
 
-  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m learning web development and building projects from scratch. 
-       This portfolio shows my progress and the projects I’ve completed.</p>
+    <p>I’m learning web development and building projects from scratch. This portfolio shows my progress and the projects I’ve completed.</p>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="project login">
@@ -37,18 +35,16 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    <p><strong>Email</strong>: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p><strong>WhatsApp</strong>: <a href="https://wa.me/254798858728">+254 79 885 8728</a></p>
+    <p><strong>Payments</strong>: Send deposit via M‑Pesa Send Money to <strong>+254 79 885 8728</strong>. Attach payment screenshot when you message on WhatsApp.</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2026 Doublem</p>
+    <p>© <span id="year"></span> Doublem. Built with HTML and CSS.</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
